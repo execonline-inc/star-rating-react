@@ -6,7 +6,7 @@
 $ npm install --save star-rating-react
 ```
 
-![react-range-slider-demo](https://github.com/joegesualdo/star-rating-react/raw/master/demo.gif)
+![react-range-slider-demo](https://github.com/execonline-inc/star-rating-react/raw/master/demo.gif)
 
 ## Usage
 ```javascript
