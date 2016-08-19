@@ -1,51 +1,47 @@
-## star-rating-react [![Build Status](https://travis-ci.org/joegesualdo/star-rating-react.svg?branch=master)](https://travis-ci.org/joegesualdo/star-rating-react)
+## star-rating-react
 > A React star rating component.
-
-## Highlights
-
-- Highlight 1
-- Highlight 2
-- Highlight 3
 
 ## Install
 ```
-$ npm install --save star-rating-react 
+$ npm install --save star-rating-react
 ```
+
+![react-range-slider-demo](https://github.com/joegesualdo/star-rating-react/raw/master/demo.gif)
 
 ## Usage
 ```javascript
-var starRatingReact = require("starRatingReact").default
+import StarRating from 'star-rating-react';
 
-// insert code example here
+<StarRating
+  size={15}
+  value={3}
+  onChange={function(val){console.log(val)}}
+/>,
+```
+
+## Props
+
+| Name | Type | Description |
+|------|------|-------------|
+| size | `Number` | Max Rating (number of possible stars)|
+| value | `Number` | Number of star highlighted |
+| onChange | `Function` | Invoked when user selects a rating|
+
+## Locally serve example
+```
+$ npm run dev-server
+```
+> NOTE: Navigate to [http://localhost:8080/examples/](http://localhost:8080/examples/)
+
+## Build
+```
+$ npm run build
 ```
 
 ## Test
 ```
 $ npm test
 ```
-## API
-### `methodName(arg1, arg2)`
-> What does this method do?
-
-| Name | Type | Description |
-|------|------|-------------|
-| arg1 | `Array` | Test description|
-| arg2 | `String` | Test description|
-
-Returns: `Array`, of things
-
-```javascript
-var starRatingReact = require("star-rating-react").default
-
-// insert method example here
-```
-## Build
-```
-$ npm run build
-```
-
-## Related
-- [example-package]() - Add description of the example package here.
 
 ## License
 MIT © [Joe Gesualdo]()

@@ -1,3 +1,21 @@
+:root {
+  --gray: #ddd;
+  --accent-primary: #e93434;
+}
+
 .root {
-  /* */
+  unicode-bidi: bidi-override;
+  font-size: 25px;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+
+.on {
+  color: var(--accent-primary);
+}
+
+.off {
+  color: var(--gray);
 }
