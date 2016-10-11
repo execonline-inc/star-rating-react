@@ -12,10 +12,12 @@
   padding: 0;
 }
 
-.on {
+.star {
+}
+.star--enabled {
   color: var(--accent-primary);
 }
 
-.off {
+.star--disabled {
   color: var(--gray);
 }

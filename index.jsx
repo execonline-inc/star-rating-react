@@ -1,5 +1,8 @@
 import React from 'react';
+import classNames from 'classnames/bind';
 import style from './index.css';
+
+let cx = classNames.bind(style);
 
 const propTypes = {
   size: React.PropTypes.number,
@@ -38,10 +41,15 @@ class StarRating extends React.Component {
   }
 
   renderStarIcon(isOn, valueOfStar) {
+    let starClassNames= cx({
+      star: true,
+      'star--enabled': isOn,
+      'star--disabled': !isOn
+    });
     return (
       <span
         key={valueOfStar}
-        className={isOn ? style.on : style.off}
+        className={starClassNames}
         onMouseEnter={this.onMouseEnterStar.bind(null, valueOfStar)}
         onMouseLeave={this.onMouseLeaveStar.bind(null, valueOfStar)}
         onClick={this.onSelectRating.bind(null, valueOfStar)}
