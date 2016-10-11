@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StarRating from './../index.jsx';
+import StarRating from './../dist/index.js';
 
 ReactDOM.render(
   <StarRating
