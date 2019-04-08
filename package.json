@@ -8,14 +8,12 @@
     "prepublish": "npm run build",
     "build": "node .webpack/webpackBuild.js",
     "dev-server": "node .webpack/webpackDevServer.js",
-    "test": "CONFIG=$(pwd)/.webpack/webpack.config.test.js BABEL_DISABLE_CACHE=1 NODE_ENV=test node_modules/mocha/bin/mocha --compilers js:babel-register --require babel-register __tests__/helpers/browser.js __tests__/**/*.spec.js",
-    "watch-test": "CONFIG=$(pwd)/.webpack/webpack.config.test.js BABEL_DISABLE_CACHE=1 NODE_ENV=test node_modules/mocha/bin/mocha -w --compilers js:babel-register --require babel-register __tests__/helpers/browser.js __tests__/**/*.spec.js"
+    "test":
+      "CONFIG=$(pwd)/.webpack/webpack.config.test.js BABEL_DISABLE_CACHE=1 NODE_ENV=test node_modules/mocha/bin/mocha --compilers js:babel-register --require babel-register __tests__/helpers/browser.js __tests__/**/*.spec.js",
+    "watch-test":
+      "CONFIG=$(pwd)/.webpack/webpack.config.test.js BABEL_DISABLE_CACHE=1 NODE_ENV=test node_modules/mocha/bin/mocha -w --compilers js:babel-register --require babel-register __tests__/helpers/browser.js __tests__/**/*.spec.js"
   },
-  "keywords": [
-    "star",
-    "rating",
-    "review"
-  ],
+  "keywords": ["star", "rating", "review"],
   "author": {
     "name": "Joe Gesualdo",
     "email": "joegesualdo@gmail.com",
@@ -66,8 +64,8 @@
     "stylelint-config-standard": "^7.0.0",
     "stylelint-loader": "^6.0.0",
     "stylelint-webpack-plugin": "^0.2.0",
-    "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1",
+    "webpack": "^3.4.0",
+    "webpack-dev-server": ">=3.1.11",
     "xhr2": "^0.1.3"
   },
   "dependencies": {
